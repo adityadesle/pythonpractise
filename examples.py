@@ -117,7 +117,6 @@ for e in arr:
 
 print("by function ",arr.index(val))    
     
-'''
 #8) starting with numpy
 
 from numpy import *
@@ -128,3 +127,25 @@ print(arr.dtype)
 
 print(arr)
    
+   
+#9) display current-time and date:
+
+import datetime
+now = datetime.datetime.now()
+
+print("current date and time")
+print(now.strftime("%Y-%m-%d %H:%M:%S"))   
+
+'''
+
+#10) enter user values and convert into list and tuples
+
+values = (input("enter the values"))
+
+list = values.split(",")
+tuple = tuple(list)
+
+print("list ",list)
+print("tuple ",tuple)
+
+
