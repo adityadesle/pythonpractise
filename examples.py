@@ -76,7 +76,7 @@ for i in range(2,num):
         break
 else:
     print("prime")    
-''' 
+
 
 #6) array from an array
 
@@ -88,3 +88,43 @@ newArr = array(vals.typecode, (a for a in vals))
 
 for i in newArr:
     print(i)
+
+#7) print array in from user input and search the element's location
+
+from array import *
+
+arr = array('i',[])
+
+n = int(input('enter the length:'))
+
+for i in range(n):
+    x = int(input("enter value:"))
+    arr.append(x)
+    
+print(arr)    
+
+val =int(input("enter the value to be searched"))
+
+k=0
+
+for e in arr:
+    if e==val:
+        print("the position is",k)
+        break
+    k+=1
+    
+#can also find index by function 
+
+print("by function ",arr.index(val))    
+    
+'''
+#8) starting with numpy
+
+from numpy import *
+
+arr = array([2,5,6,7.0]) #if any 1 value is float whole array will be float
+
+print(arr.dtype)
+
+print(arr)
+   
