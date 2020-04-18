@@ -136,7 +136,7 @@ now = datetime.datetime.now()
 print("current date and time")
 print(now.strftime("%Y-%m-%d %H:%M:%S"))   
 
-'''
+
 
 #10) enter user values and convert into list and tuples
 
@@ -149,3 +149,17 @@ print("list ",list)
 print("tuple ",tuple)
 
 
+#11) explaining elevator using if statement
+
+user_floor = 6
+
+current_floor = int(input("enter the value here"))
+
+difference = user_floor - current_floor
+
+if difference < 0:
+    print("move down")
+
+if difference > 0:
+    print("move up")    
+'''
