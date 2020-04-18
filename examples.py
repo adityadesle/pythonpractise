@@ -162,4 +162,71 @@ if difference < 0:
 
 if difference > 0:
     print("move up")    
+
+#12) if...elif...else statement
+
+number = 3.4
+
+if number > 0:
+    print("positive")
+
+elif num == 0:
+    print("zero")
+
+else:
+    print("negative")    
+    
+    
+#13) odd number in range (1,20)
+
+odd_numbers = " "
+
+for n in range(1,20):
+    if n % 2 != 0:
+        odd_numbers=odd_numbers+str(n)+' '
+        print(odd_numbers)
+
+
+#14) for sum of number from 1-1000
+
+number = 0
+
+for i in range(0,1000):
+    number = number + i
+    
+print(number)
+
 '''
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    
