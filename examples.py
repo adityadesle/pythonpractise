@@ -196,16 +196,40 @@ for i in range(0,1000):
     
 print(number)
 
+
+
+#15) to find 10th odd in a given sequence of number
+
+first_num = int(input("Enter the starting number:"))
+
+last_num = int(input("Enter the ending number:"))
+
+
+
+nth_odd_num = 0 
+
+count_10th_odd_num = 0
+
+for number in range(first_num,last_num+1):
+    if number % 2 != 0:
+        nth_odd_num = nth_odd_num + 1
+        
+        if nth_odd_num == 10:
+            count_10th_odd_num=number
+            break               #it will break from the for loop
+            
+print("The 10th odd number is :",count_10th_odd_num)
+
+
+#16) printing number  multiple times:
+
+for i in range(1,11):
+    print(" ")
+    
+    for j in range(0,i):
+        print(i,end=" ")
+
 '''
-
-
-
-
-
-
-
-
-
 
 
 
