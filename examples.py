@@ -234,13 +234,54 @@ for i in range(1,11):
 name = "my name is khan "
 print(name.split())
 
+
+
+name =" Aditya "
+print(name.strip())
+
+
+name = "aditya1"
+print(name.isalpha())
+
+
+#16) Reversing a string
+
+name = input("enter the name:")
+
+length = len(name)
+
+while length > 0:
+    print(name[length -1])
+    length = length-1
+
+
+#17) take user input string and split it and print each word capitalized
+
+name = input("enter the string:")
+
+print(name.split())
+
+for word in name:
+    print(word.title(),end="")
+
 '''
 
 
+#18) occurence of a letter in a word
 
+name = input("enter the word:")
 
+char = input("enter the character to be searched:")
 
+count = 0
 
+length = len(name)
+
+for i in range(0,length):
+    if name[i]== char:
+        count = count + 1
+
+print(count)        
 
 
 
