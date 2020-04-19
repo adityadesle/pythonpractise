@@ -229,8 +229,12 @@ for i in range(1,11):
     for j in range(0,i):
         print(i,end=" ")
 
-'''
 
+
+name = "my name is khan "
+print(name.split())
+
+'''
 
 
 
