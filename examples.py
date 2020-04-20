@@ -264,7 +264,7 @@ print(name.split())
 for word in name:
     print(word.title(),end="")
 
-'''
+
 
 
 #18) occurence of a letter in a word
@@ -284,18 +284,44 @@ for i in range(0,length):
 print(count)        
 
 
+#19) fibonacci sequence
+
+def fib (n) :
+     if n < 0: 
+        print("Incorrect input") 
+     elif n == 1: 
+        return 0
+     elif n == 2: 
+        return 1    
+     
+     else: 
+        return fib (n - 1) + fib(n -  2)
+
+     
+value = fib(5)
+print(value)
 
 
 
+#20)calculate interest 
+
+def calculate_interest(balance,interest,days):
+    interest_amount = balance * (interest/100)*(days/365)
+    return interest_amount
+
+print(calculate_interest(1000, 4, 100))
 
 
 
+#21) sum of number divisible by 5 in a given range of number
+def sum_num(n,m):
+    sum = 0
+    for n in range(n,m+1):
+        if n % 5 ==0:
+            sum = sum + n
+    return sum
+print(sum_num(0,10))    
+'''
 
-
-
-
-
-    
-    
     
     
