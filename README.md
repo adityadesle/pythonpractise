@@ -27,3 +27,6 @@ Basics of Python:
 4) Assigning Variables
 5)Operators : Arithmetic , Logical , Comparison , Operator precedence
 6)Flow Control : if , nested if , else , elif
+7)Loops: for , while : break statement , for-else , nested loops
+8)Strings: And Functions:
+
