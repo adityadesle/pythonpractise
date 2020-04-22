@@ -380,7 +380,7 @@ avg = sum / len(grades)
 print(avg)
 
 
-'''
+
 
 #25) number of vowels in a sentence
 
@@ -397,6 +397,8 @@ for letter in list(sentence):
 
 print(count)
 
+
+'''
 
 
 
