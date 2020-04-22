@@ -321,7 +321,20 @@ def sum_num(n,m):
             sum = sum + n
     return sum
 print(sum_num(0,10))    
-'''
 
+
+#22) to have multiple variable , and number of parameters
+
+def avg_grade(*grades):  #with the help of * you can pass multiple arguments
+    i =0
+    sum = 0.0
+    for grade in grades:
+        sum = sum + grade
+        i = i+1
+    avg = sum / i
+    return avg
+
+avg = avg_grade(2.5,3.0)
+print(avg)    
     
-    
+ '''   
