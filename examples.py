@@ -337,7 +337,7 @@ def avg_grade(*grades):  #with the help of * you can pass multiple arguments
 avg = avg_grade(2.5,3.0)
 print(avg)    
     
- '''
+ 
 #23) sum of all odd number in range
 
 def num_range(n,m):
@@ -350,3 +350,65 @@ def num_range(n,m):
 value = num_range(1,10)
 print(value) 
     
+
+#24) example of list
+
+grades = []   #defining empty list grade
+
+while True:
+    grade = input("enter the grade:")
+    
+    if grade =='e':  # e for exit
+        break
+    
+    else :
+        grade = float(grade)  #we can directly add float to input fun.
+        
+        grades.append(grade)  # to add value to the end of the list
+            
+print(grades) 
+    
+sum = 0 
+
+for grade in grades:
+    sum = sum + grade
+
+print(sum)
+
+avg = sum / len(grades)
+
+print(avg)
+
+
+'''
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
