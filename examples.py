@@ -382,11 +382,20 @@ print(avg)
 
 '''
 
+#25) number of vowels in a sentence
+
+count = 0
+
+sentence = input("enter the sentence:")
+vowels = ['a','e','i','o','u']
 
 
+for letter in list(sentence):
+    if letter in vowels:
+        count = count +1 
 
 
-
+print(count)
 
 
 
