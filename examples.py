@@ -337,4 +337,16 @@ def avg_grade(*grades):  #with the help of * you can pass multiple arguments
 avg = avg_grade(2.5,3.0)
 print(avg)    
     
- '''   
+ '''
+#23) sum of all odd number in range
+
+def num_range(n,m):
+    sum = 0
+    for i in range(n,m+1):
+        if i % 2 != 0:
+            sum = sum + i
+        
+    return sum
+value = num_range(1,10)
+print(value) 
+    
