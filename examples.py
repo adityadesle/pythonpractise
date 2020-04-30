@@ -398,19 +398,44 @@ for letter in list(sentence):
 print(count)
 
 
+
+
+name = input("enter name")
+
+print('Hello {0}'.format(name))
+
+
+
+# example of dictionary
+grades = {
+            "Maths":3.2,
+            "English":2.0,
+            "Physics":3.7}
+
+print(type(grades))
+
 '''
 
 
+#26) Calculating total number of vowels occurence in the word / sentence
+
+sentence = input("Enter your sentence:")
+
+vowels = ['a','e','i','o','u']
+
+vowel_count=[]
 
 
+for i in list(sentence):
+    if i in vowels:
+        if vowel_count.get(i)==None:  #check already value exist or not
+            vowel_count[i]=1
+            
+        else:
+            vowel_count[i]=vowel_count[i]+1
 
 
-
-
-
-
-
-
+print("result:",vowel_count)
 
 
 
