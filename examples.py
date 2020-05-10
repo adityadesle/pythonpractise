@@ -179,7 +179,7 @@ else:
     
 #13) odd number in range (1,20)
 
-odd_numbers = " "
+ odd_numbers = " "
 
 for n in range(1,20):
     if n % 2 != 0:
@@ -414,7 +414,7 @@ grades = {
 
 print(type(grades))
 
-'''
+
 
 
 #26) Calculating total number of vowels occurence in the word / sentence
@@ -440,10 +440,46 @@ print("result:",vowel_count)
 
 
 
+#27) enter a sentence and add the sentence as per vowel in a dictionary
+
+sentence = input("enter the sentence:")
+words = []
+words = sentence.split()
+
+vowels = ['a','e','i','o','u']
+
+vowels_list ={}
+
+for word in words:
+    for letter in words:
+        if letter in vowels:
+            if vowels_list.get(letter)==None:
+                vowels_list[letter]=[word]
+                
+            else:
+                vowels_list.get(letter).append(word)
+                
+
+print("result",vowels_list)
 
 
 
+#28) example of tuple for the number of student for admission
 
+ages = (4,3,2,6,5,3,7,8,4,2,5)
+
+def primary_school(age):
+    if 5>=age>=11:
+        return True
+    else:
+        return False
+    
+primary_school_age = filter(primary_school,ages)
+
+for age in primary_school_age:
+    print(age)    
+
+'''
 
 
 
