@@ -548,5 +548,25 @@ result=fact(5)
 print(result)
 
 
+
+
+#32)filter , map ,reduce function
+
+from functools import reduce
+
+nums = [3,2,4,6,7,8,5,9]
+
+evens = list(filter(lambda n:n%2==0,nums))
+
+print(evens)
+
+double = list(map(lambda n: n*2,evens))
+
+print(double)
+
+sum = reduce(lambda a,b:a+b,double)
+
+print(sum)
+
 '''
 
