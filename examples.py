@@ -568,5 +568,150 @@ sum = reduce(lambda a,b:a+b,double)
 
 print(sum)
 
+
+
+
+#33)__init__ method:
+
+
+class computer:
+    
+    
+    def __init__(self,cpu,ram):
+        self.cpu=cpu
+        self.ram=ram
+        
+    
+
+    def config(self):
+        print("conifg is ",self.cpu,self.ram)
+        
+        
+
+comp1 = computer('i5',8)
+comp2 = computer('i7',8) 
+
+comp1.config()
+comp2.config()
+  
+
+#34) example of class , self , __init__
+
+class employee:
+    no_of_leaves = 8
+    pass
+
+    def __init__(self,aname,asalary,arole):
+        self.name=aname
+        self.salary=asalary
+        self.role=arole
+                
+
+    def printdetails(self):
+        return f"name is {self.name} , salary is {self.salary} , and his role is {self.role}"
+
+
+harry = employee("harry", 454,"dev")
+rohan = employee()
+
+
+rohan.name="rohan"
+rohan.salary="4454"
+rohan.role="dev"
+
+
+harry.name="harry"
+harry.salary="546"
+harry.role="se"
+
+print(harry.salary)
+print(rohan.printdetails())
+
+#35) init method practise
+
+class dog():
+    
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+        
+        
+    def sit(self):
+        print(self.name.title()+" is sitting")
+        
+    
+    def roll(self):
+        print(self.name.title()+" rolled over")
+        
+        
+
+my_dog=dog("willie",6)
+
+print("my dog name is "+my_dog.name.title()+".")
+print("my dog is "+str(my_dog.age)+" years old.")
+
+my_dog.sit()
+my_dog.roll()        
+  
+
+#36) example 
+  
+  
+class restaurant():
+    
+    def __init__(self,res_name,cusine_type):
+        self.name=res_name
+        self.type=cusine_type
+        
+    
+    def describe_res(self):
+        print(self.name.title()+" is the best restraunt in the city and known for its "+self.type+".")
+        
+    
+
+    def open_res(self):
+        print(self.name+" is open from 11-11")
+        
+
+
+
+my_res = restaurant("foodie","indo-italian")
+
+print("The name of restraunt is "+my_res.name)
+print("And the cusine type of restraunt is "+my_res.type)
+
+my_res.describe_res()
+my_res.open_res()
+
 '''
+#37) inheritance
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+
+     
+        
 
