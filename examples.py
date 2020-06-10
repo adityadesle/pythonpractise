@@ -683,15 +683,93 @@ print("And the cusine type of restraunt is "+my_res.type)
 my_res.describe_res()
 my_res.open_res()
 
-'''
-#37) inheritance
+
+#37) types of method instance, class,static
+
+
+class student:
+
+    school='ADedu'    
+    
+    def __init__(self,m1,m2,m3):
+        
+        self.m1=m1
+        self.m2=m2
+        self.m3=m3
+        
+        
+        
+    def avg(self):
+        return (self.m1+self.m2+self.m3)/3        
+   
 
 
 
+
+    @classmethod 
+    
+    
+    def info(cls):
+        return cls.school
+   
+    def get_m1(self):                    #accessor
+        return(self.m1)
+
+    def set_m1(self,value):              #mutators
+        self.m1=value        
         
 
+    @staticmethod
+    
+    def into():
+        print("This is a tech school.")
 
 
+s1 = student(34,54,23)
+s2 = student(40,44,32)        
+
+print(s1.avg())
+
+print(student.info())
+
+student.into() 
+
+
+
+#38) inner class
+
+class student:
+    
+    def __init__(self,name,rollno):
+        self.name=name
+        self.rollno=rollno
+        self.lap=self.laptop() #inner class obj defined
+        
+    def show(self):
+        print(self.name,self.rollno) 
+        self.lap.show()        #inner class obj called
+
+
+
+    class laptop:
+        
+        def __init__(self):
+            self.brand='lenovo'
+            self.processor='i5'
+            self.price=50
+
+
+        def show(self):
+            print(self.brand,self.processor,self.price)
+            
+
+s1 = student('adi', 16)
+
+s2 = student('ms',7)
+
+s1.show()
+s2.show()
+'''
 
 
 
